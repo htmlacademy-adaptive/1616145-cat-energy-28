@@ -1,12 +1,174 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
   </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
+  <body class="page__body">
+
+    <header class="main-header">
+
+      <a class="main-header__logo logo">
+        <!-- Вставить логотип
+        <img class="logo__image" src="" width="34" height="38" alt="Питание для котов «Cat Energy».">
+        <img class="logo__text" src="" width="101" height="18" alt="Питание для котов «Cat Energy».">
+        -->
+      </a>
+
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--active">
+              <a href="index.html">
+                Главная
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a href="catalog.html">
+                Каталог продукции
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a href="form.html">
+                Подбор программы
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+    </header>
+
+    <main class="main-container">
+
+      <h1 class="visually-hidden">Функциональное питание для котов «Cat Energy»</h1>
+
+      <section class="hero-block">
+        <h2 class="visually-hidden">Подобрать программу питания для кота</h2>
+        <div class="hero-block__text hero-block-text">
+          <span class="hero-block-text__title">Функциональное питание для котов</span>
+          <span class="hero-block-text__subtitle">Занялся собой? Займись котом!</span>
+        </div>
+        <!-- Вставить картинку <img class="hero-block__image" src="" width="280" height="270" alt="Упаковка продукта «Cat Energy»."> -->
+        <a class="hero-block__button button button--primary" href="form.html">
+          Подобрать программу
+        </a>
+      </section>
+
+      <section class="programs-preview">
+        <h2 class="visually-hidden">Программы питания для котов</h2>
+        <ul class="programs-preview__list program-list">
+          <li class="program-list__item">
+            <!-- Вставить картинку <img class="program-list__image" src="" width="50" height="53" alt="Изображение стройного кота."> -->
+            <span class="program-list__title">Похудение</span>
+            <p class="program-list__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+            <a class="program-list__button button button--catalog-link" href="#">
+              Каталог slim
+            </a>
+          </li>
+          <li class="program-list__item">
+            <!-- Вставить картинку <img class="program-list__image" src="" width="67" height="50" alt="Изображение кота с мышечной массой."> -->
+            <span class="program-list__title">Набор массы</span>
+            <p class="program-list__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+            <a class="program-list__button button button--catalog-link" href="#">
+              Каталог pro
+            </a>
+          </li>
+      </ul>
+      </section>
+
+      <section class="about">
+        <h2 class="visually-hidden">Как работает программа питания «Cat Energy»</h2>
+        <span class="about__title">Как это работает</span>
+        <ul class="about__list advantages-list">
+          <li class="advantages-list__item">
+            <div class="advantages-list__image"></div>
+            <p class="advantages-list__text">Функциональное питание<br>содержит только полезные<br>питательные вещества.</p>
+          </li>
+          <li class="advantages-list__item">
+            <div class="advantages-list__image"></div>
+            <p class="advantages-list__text">Выпускается в виде порошка,<br>который нужно лишь залить<br>кипятком и готово.</p>
+          </li>
+          <li class="advantages-list__item">
+            <div class="advantages-list__image"></div>
+            <p class="advantages-list__text">Замените один-два приема<br>обычной еды на наше<br>функциональное питание.</p>
+          </li>
+          <li class="advantages-list__item">
+            <div class="advantages-list__image"></div>
+            <p class="advantages-list__text">Уже через месяц наслаждайтесь<br>изменениями к лучшему<br>вашего питомца!</p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="demo">
+        <h2 class="visually-hidden">Демонстрация до и после питания «Cat Energy»</h2>
+        <span class="demo__title">Живой пример</span>
+        <p class="demo__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+        <div class="demo__factoids factoids">
+          <div class="factoids__item">
+            <span class="factoids__title">5 КГ</span>
+            <span class="factoids__subtitle">снижение веса</span>
+          </div>
+          <div class="factoids__item">
+            <span class="factoids__title">60 ДНЕЙ</span>
+            <span class="factoids__subtitle">затрачено времени</span>
+          </div>
+        </div>
+        <p class="demo__text">Затраты на питание: 15 000 РУБ.</p>
+        <div class="demo__slider slider">
+          <!-- Вставить картинку <img class="slider__image image-left" src="" width="280" height="256" alt="Изображение толстого кота."> -->
+          <div class="slider__delimiter">
+            <span class="visually-hidden">Ползунок слайдера</span>
+          </div>
+          <!-- Вставить картинку <img class="slider__image image-right" src="" width="280" height="256" alt="Изображение тощего кота."> -->
+        </div>
+      </section>
+
+      <section class="address address--background_white">
+        <h2 class="visually-hidden">Адрес офиса «Cat Energy»</h2>
+        <p class="address__title">Приглашаем<br>к сотрудничеству<br>дилеров!</p>
+        <p class="address__text">ул. Большая<br>Конюшенная, д. 19/8<br>Санкт-Петербург</p>
+        <div class="address__map map">
+          <span class="visually-hidden">Карта с адресом офиса «Cat Energy»</span>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="main-footer">
+
+      <a class="main-footer__logo-catenergy logo">
+        <!-- Вставить логотип <img class="logo__text" src="" width="128" height="24" alt="Питание для котов «Cat Energy»."> -->
+      </a>
+
+      <ul class="main-footer__social-buttons social-buttons">
+        <li class="social-buttons__item">
+          <a class="social-buttons__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+            <span class="visually-hidden">Вконтакте</span>
+          </a>
+        </li>
+        <li class="social-buttons__item">
+          <a class="social-buttons__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+            <span class="visually-hidden">Ютуб</span>
+          </a>
+        </li>
+        <li class="social-buttons__item">
+          <a class="social-buttons__link social__link--telegram" href="https://t.me/htmlacademy">
+            <span class="visually-hidden">Телеграм</span>
+          </a>
+        </li>
+      </ul>
+
+      <a class="main-footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive">
+        HTML Academy
+        <svg width="27" height="35" viewBox="0 0 27 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M13.6426 0.515754L13.5 0.5L0 1.90733V26.5129L13.5 34.5L27 26.5129V1.90733L13.6426 0.515754ZM25.2344 25.5151L13.5 32.4573L1.76561 25.5151V15.4293L13.4507 22.3451L13.4701 23.5984L5.45351 18.8548L5.44295 20.0801L13.4894 24.8885L13.5088 26.175L5.46408 21.4174L5.45351 22.6427L13.5 27.4511L21.6239 22.6182V21.3929V17.409L25.2432 15.2595L25.2344 25.5151ZM25.2344 13.9519L22.0147 15.8319L20.5325 16.7071L13.4666 12.5201L13.456 13.7454L19.4957 17.318L19.4429 17.3495L19.3126 17.4247L18.4536 17.9166L13.4666 14.9689L13.456 16.1942L17.3921 18.5222L16.4591 19.1314L16.438 19.1436L13.4666 17.402L13.456 18.6273L15.4029 19.7615L13.4155 20.9483L1.7973 14.0762L13.4349 7.11831L25.2344 13.9519ZM25.2344 12.7266L13.4401 5.81075L1.76561 12.7196V3.4897L13.5 2.26442L25.2344 3.4897V12.7266Z" fill="#666666"/>
+          </svg>
+      </a>
+
+    </footer>
 
   </body>
 </html>
