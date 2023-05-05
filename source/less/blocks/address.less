@@ -1,4 +1,8 @@
 .address {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 26px 20px;
+
   &--background_white {
     background-color: #FFFFFF;
   }
@@ -8,11 +12,26 @@
   }
 
   &__title {
-
+    grid-column: 1 / 2;
+    font-family: 'Oswald', 'Arial', sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    font-style: normal;
+    color: #111111;
+    text-transform: uppercase;
+    margin: 0;
   }
 
   &__text {
-
+    grid-column: 2 / 3;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    font-style: normal;
+    color: #444444;
+    margin: 0;
   }
 
   &__map {
