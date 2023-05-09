@@ -1,6 +1,11 @@
 .application-form {
-  &__input-list {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 32px;
 
+
+  &__input-list {
+    .grid-margin;
   }
 
   &__fieldset {
@@ -12,7 +17,11 @@
   }
 
   &__title {
-
+    display: block;
+    .grid-margin;
+    .fonts-title;
+    .font(24px; 26px; 400; #000000);
+    margin-bottom: 32px;
   }
 
   &__textarea {
@@ -20,14 +29,18 @@
   }
 
   &__checkbox-list {
-
+    .grid-margin;
   }
 
   &__button {
-
+    .grid-margin;
+    height: 40px;
+    margin-bottom: 21px;
   }
 
   &__hint {
-
+    .fonts-paragraph;
+    .font(14px; 16px; 400; #000000);
+    text-align: center;
   }
 }
