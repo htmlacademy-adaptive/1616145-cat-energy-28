@@ -1,27 +1,37 @@
 
 .additional-product-list {
-padding: 0;
+  .grid-margin;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 12px;
 
   &__item {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid #CDCDCD;
   }
 
   &__title {
     grid-column: 1 / 3;
     .fonts-title;
     .font(16px; 16px; 400; #222222);
-    font-family: 'Oswald', 'Arial', sans-serif;
   }
 
   &__quality {
+    grid-column: 1 / 2;
     .fonts-paragraph;
     .font(14px; 14px; 400; #444444);
   }
 
   &__value {
+    grid-column: 2 / 3;
     .fonts-paragraph;
     .font(14px; 14px; 400; #444444);
+    text-align: right;
   }
 
   &__button {
