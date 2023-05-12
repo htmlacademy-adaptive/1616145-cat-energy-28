@@ -1,0 +1,32 @@
+.address {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 26px 20px;
+
+  &--background_white {
+    background-color: #ffffff;
+  }
+
+  &--background_grey {
+    background-color: #f2f2f2;
+  }
+
+  &__title {
+    grid-column: 1 / 2;
+    .fonts-title;
+    .font(16px; 20px; 400; #111111);
+    text-transform: uppercase;
+    margin: 0;
+  }
+
+  &__text {
+    grid-column: 2 / 3;
+    .fonts-paragraph;
+    .font(14px; 20px; 400; #444444);
+    margin: 0;
+  }
+
+  &__map {
+
+  }
+}
