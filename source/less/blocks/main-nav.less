@@ -1,6 +1,5 @@
 .main-nav {
-  .grid-margin;
-  margin: 0;
+
 
   &__toggle {
     border: 0;
@@ -8,6 +7,11 @@
     background-color: inherit;
     width: 24px;
     height: 24px;
+
+
+    @media (min-width: @tablet-width) {
+      display: none;
+    }
   }
 
   &__wrapper {
