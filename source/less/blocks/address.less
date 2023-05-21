@@ -1,32 +1,92 @@
 .address {
-  display: grid;
-  grid-template-columns: auto auto;
-  padding: 26px 20px;
+  display: flex;
+  flex-direction: column;
 
-  &--background_white {
+  &--background-white {
     background-color: #ffffff;
   }
 
-  &--background_grey {
+  &--background-grey {
     background-color: #f2f2f2;
   }
 
+
+  @media (min-width: @desktop-width) {
+    position: relative;
+    padding-top: 95px;
+    padding-bottom: 107px;
+  }
+
+  &__container {
+    @media (min-width: @desktop-width) {
+      position: relative;
+      z-index: 1;
+      .width-for-desktop;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 26px 20px;
+
+    @media (min-width: @tablet-width) {
+      padding: 56px 70px;
+    }
+
+    @media (min-width: @desktop-width) {
+      display: inline-flex;
+      gap: 100px;
+      padding: 56px 60px 56px 80px;
+      background-color: #ffffff;
+    }
+  }
+
   &__title {
-    grid-column: 1 / 2;
     .fonts-title;
-    .font(16px; 20px; 400; #111111);
+    .font(20px; 26px; 400; #111111);
     text-transform: uppercase;
     margin: 0;
+
+    @media (max-width: @mobile-width-only) {
+      .fonts-title;
+      .font(16px; 20px; 400; #111111);
+    }
   }
 
   &__text {
-    grid-column: 2 / 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 80px;
     .fonts-paragraph;
-    .font(14px; 20px; 400; #444444);
+    .font(16px; 20px; 400; #444444);
     margin: 0;
+
+    @media (max-width: @mobile-width-only) {
+      .fonts-paragraph;
+      .font(14px; 20px; 400; #444444);
+      height: 60px;
+    }
+  }
+
+  &__city {
+
   }
 
   &__map {
+    background-color: #808080;
+    height: 400px;
+    width: 100vw;
 
+    @media (max-width: @mobile-width-only) {
+      height: 362px;
+    }
+
+    @media (min-width: @desktop-width) {
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
   }
 }

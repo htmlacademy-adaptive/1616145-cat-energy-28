@@ -1,8 +1,14 @@
 .main-nav {
-  .grid-margin;
-
   &__toggle {
+    border: 0;
+    padding: 0;
+    background-color: inherit;
+    width: 24px;
+    height: 24px;
 
+    @media (min-width: @tablet-width) {
+      display: none;
+    }
   }
 
   &__wrapper {

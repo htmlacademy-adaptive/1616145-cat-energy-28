@@ -6,13 +6,35 @@
     .fonts-title;
     .font(36px; 36px; 400; #000000);
 
+    @media (min-width: @desktop-width) {
+      .width-for-desktop;
+    }
   }
 
   &__list {
 
   }
 
+  &__container {
+    @media (min-width: @desktop-width) {
+      display: flex;
+      justify-content: space-between;
+      gap: 79px;
+      margin-bottom: 86px;
+    }
+  }
+
   &__banner {
-    margin: 35px auto;
+    margin-top: 35px;
+    margin-bottom: 35px;
+
+    @media (min-width: @tablet-width) {
+      margin-top: 69px;
+      margin-bottom: 76px;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin: 0;
+    }
   }
 }
