@@ -3,9 +3,18 @@
   flex-direction: column;
   margin-bottom: 32px;
 
+  @media (min-width: @desktop-width) {
+    .width-for-desktop;
+  }
+
 
   &__input-list {
     .grid-margin;
+
+    @media (min-width: @desktop-width) {
+      margin-left: 0;
+      margin-right: 0;
+    }
   }
 
   &__fieldset {
@@ -22,6 +31,11 @@
     .fonts-title;
     .font(24px; 26px; 400; #000000);
     margin-bottom: 32px;
+
+    @media (min-width: @desktop-width) {
+      margin-left: 0;
+      margin-right: 0;
+    }
   }
 
   &__textarea {
@@ -30,17 +44,59 @@
 
   &__checkbox-list {
     .grid-margin;
+
+    @media (min-width: @desktop-width) {
+      margin-left: 0;
+      margin-right: 0;
+    }
   }
 
   &__button {
-    .grid-margin;
-    height: 40px;
     margin-bottom: 21px;
+    height: 40px;
+
+
+    @media (min-width: @tablet-width) {
+      margin-bottom: 0;
+      height: 52px;
+      width: 282px;
+    }
   }
 
   &__hint {
     .fonts-paragraph;
     .font(14px; 16px; 400; #000000);
     text-align: center;
+  }
+
+
+  &__container-input {
+    @media (min-width: @desktop-width) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+    }
+
+  }
+
+  &__container-button {
+    .grid-margin;
+    display: flex;
+    flex-direction: column;
+
+
+    @media (min-width: @tablet-width) {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 64px;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin-left: 0;
+      margin-right: 0;
+    }
+
   }
 }

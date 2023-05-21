@@ -54,47 +54,49 @@
 
     <form class="form-page__form application-form" action="https://echo.htmlacademy.ru/" method="post">
 
-      <ul class="application-form__input-list about-cat-list">
-        <li class="about-cat-list__item input-field">
-          <label class="input-field__title" for="cat-name">ИМЯ:*</label>
-          <input class="input-field__text-field" type="text" id="cat-name" name="cat-name" placeholder="БАРСИК"
-            required>
-        </li>
-        <li class="about-cat-list__item input-field">
-          <label class="input-field__title" for="cat-weight">Вес (кг):*</label>
-          <input class="input-field__text-field" type="text" id="cat-weight" name="cat-weight" placeholder="7" required>
-        </li>
-        <li class="about-cat-list__item input-field">
-          <label class="input-field__title" for="cat-age">Возраст (лет):</label>
-          <input class="input-field__text-field" type="text" id="cat-age" name="cat-age" placeholder="7">
-        </li>
-      </ul>
-
-      <fieldset class="application-form__fieldset purpose">
-        <ul class="application-form__radiobutton-list purpose__list">
-          <li class="purpose__item">
-            <label class="input-radio" tabindex="0">
-              <input class="input-radio__hidden" type="radio" name="weight-loss" value="похудение" checked />
-              <span class="input-radio__radio"></span>
-              <span class="input-radio__text">Похудение</span>
-            </label>
+      <div class="application-form__container-input">
+        <ul class="application-form__input-list about-cat-list">
+          <li class="about-cat-list__item input-field">
+            <label class="input-field__title" for="cat-name">ИМЯ:*</label>
+            <input class="input-field__text-field" type="text" id="cat-name" name="cat-name" placeholder="БАРСИК"
+              required>
           </li>
-          <li class="purpose__item">
-            <label class="input-radio" tabindex="1">
-              <input class="input-radio__hidden" type="radio" name="weight-gain" value="Набор массы" />
-              <span class="input-radio__radio"></span>
-              <span class="input-radio__text">Набор массы</span>
-            </label>
+          <li class="about-cat-list__item input-field">
+            <label class="input-field__title" for="cat-weight">Вес (кг):*</label>
+            <input class="input-field__text-field" type="text" id="cat-weight" name="cat-weight" placeholder="7" required>
           </li>
-          <li class="purpose__item">
-            <label class="input-radio" tabindex="2">
-              <input class="input-radio__hidden" type="radio" name="none" value="Не знаю" />
-              <span class="input-radio__radio"></span>
-              <span class="input-radio__text">Не знаю (Нужен ваш совет)</span>
-            </label>
+          <li class="about-cat-list__item input-field">
+            <label class="input-field__title" for="cat-age">Возраст (лет):</label>
+            <input class="input-field__text-field" type="text" id="cat-age" name="cat-age" placeholder="7">
           </li>
         </ul>
-      </fieldset>
+
+        <fieldset class="application-form__fieldset purpose">
+          <ul class="application-form__radiobutton-list purpose__list">
+            <li class="purpose__item">
+              <label class="input-radio" tabindex="0">
+                <input class="input-radio__hidden" type="radio" name="weight-loss" value="похудение" checked />
+                <span class="input-radio__radio"></span>
+                <span class="input-radio__text">Похудение</span>
+              </label>
+            </li>
+            <li class="purpose__item">
+              <label class="input-radio" tabindex="1">
+                <input class="input-radio__hidden" type="radio" name="weight-gain" value="Набор массы" />
+                <span class="input-radio__radio"></span>
+                <span class="input-radio__text">Набор массы</span>
+              </label>
+            </li>
+            <li class="purpose__item">
+              <label class="input-radio" tabindex="2">
+                <input class="input-radio__hidden" type="radio" name="none" value="Не знаю" />
+                <span class="input-radio__radio"></span>
+                <span class="input-radio__text">Не знаю (Нужен ваш совет)</span>
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+      </div>
 
       <span class="application-form__title">Контактные данные (владельца кота)</span>
       <ul class="application-form__input-list contacts-list">
@@ -149,8 +151,10 @@
         </ul>
       </fieldset>
 
-      <button class="application-form__button button button--primary" type="submit">Отправить заявку</button>
-      <span class="application-form__hint">* — Обязательные поля</span>
+      <div class="application-form__container-button">
+        <button class="application-form__button button button--primary" type="submit">Отправить заявку</button>
+        <span class="application-form__hint">* — Обязательные поля</span>
+      </div>
     </form>
 
     <section class="address address--background-grey">
